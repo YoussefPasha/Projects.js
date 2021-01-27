@@ -1,1 +1,1 @@
-# Collection of some used components with JavaScript
+# Collection of some used components with TypeScript & react
