@@ -1,1 +1,1 @@
-## Collection of some applications with JavaScript
+# Collection of some used components with JavaScript
