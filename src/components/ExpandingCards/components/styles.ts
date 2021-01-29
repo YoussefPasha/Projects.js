@@ -16,7 +16,7 @@ export const Container = styled.div`
   }
 `;
 
-export const MainPanel = styled.div<{ active: boolean }>`
+export const MainPanel = styled.div<{ active: boolean; img: string }>`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,6 +28,7 @@ export const MainPanel = styled.div<{ active: boolean }>`
   margin: 10px;
   position: relative;
   transition: all;
+  background-image: ${({ img }) => img};
   -webkit-transition: all 700ms ease-in;
   @media (max--width: 480px) {
     &:nth-of-type(4),
@@ -37,7 +38,7 @@ export const MainPanel = styled.div<{ active: boolean }>`
   }
 `;
 
-export const text = styled.h3<{ active: boolean }>`
+export const MainText = styled.h3<{ active: boolean }>`
   font-size: 24px;
   position: absolute;
   bottom: 20px;

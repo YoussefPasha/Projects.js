@@ -1,5 +1,5 @@
 import React from "react";
-import { text, Container, MainPanel } from "./styles";
+import { MainText, Container, MainPanel } from "./styles";
 
 export default function MainCardContainer({ children, ...restProps }: any) {
   return <Container {...restProps}>{children}</Container>;
@@ -8,10 +8,11 @@ export default function MainCardContainer({ children, ...restProps }: any) {
 MainCardContainer.Panel = function Panel({
   children,
   active,
+  img,
   ...restProps
 }: any) {
   return (
-    <MainPanel {...restProps} active={active}>
+    <MainPanel {...restProps} active={active} img={img}>
       {children}
     </MainPanel>
   );
@@ -22,8 +23,8 @@ MainCardContainer.Text = function Text({
   ...restProps
 }: any) {
   return (
-    <text {...restProps} active={active}>
+    <MainText {...restProps} active={active}>
       {children}
-    </text>
+    </MainText>
   );
 };
