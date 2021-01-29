@@ -1,1 +1,1 @@
-export {} from "./ExpandingCards";
+export { ExpandingCards } from "./ExpandingCards";
