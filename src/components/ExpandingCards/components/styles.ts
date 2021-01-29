@@ -1,4 +1,4 @@
-import styled from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 
 export const Container = styled.div`
   display: flex;
@@ -22,15 +22,15 @@ export const MainPanel = styled.div<{ active: boolean; img: string }>`
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: #fff;
+  color: white;
   cursor: pointer;
   flex: ${({ active }) => (active === true ? 5 : 0.5)};
   margin: 10px;
   position: relative;
   transition: all;
-  background-image: ${({ img }) => img};
+  background-image: ${({ img }) => `url(${img})`};
   -webkit-transition: all 700ms ease-in;
-  @media (max--width: 480px) {
+  @media (max-width: 480px) {
     &:nth-of-type(4),
     &:nth-of-type(5) {
       display: none;
@@ -45,5 +45,9 @@ export const MainText = styled.h3<{ active: boolean }>`
   left: 20px;
   margin: 0;
   opacity: ${({ active }) => (active === true ? 1 : 0)};
-  transition: opacity 0.3s ease-in 0.4s;
+  transition: ${({ active }) =>
+    active
+      ? css`
+   opacity 0.3s ease-in 0.4s`
+      : null};
 `;
