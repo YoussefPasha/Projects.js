@@ -1,8 +1,9 @@
 import React from "react";
+import "./card.scss";
 
-const card = (props:any) => {
+const Card = () => {
   return (
-    <div className="artboard">
+    <div className="artBoard">
       <div className="card">
         <div className="card__side card__side--back">
           <div className="card__cover">
@@ -13,7 +14,7 @@ const card = (props:any) => {
           <div className="card__details">
             <ul>
               <li>Advanced JS and CSS</li>
-              <li>JS/CSS Preprocessors</li>
+              <li>JS/CSS Preprocessor</li>
               <li>JS Frameworks</li>
               <li>Advanced Animations</li>
               <li>Deployment Pipelines</li>
@@ -36,4 +37,4 @@ const card = (props:any) => {
   );
 };
 
-export default card;
+export default Card;
