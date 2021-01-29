@@ -1,7 +1,7 @@
 import React from "react";
 import "./cardStyle.scss";
 
-const Card = () => {
+const Card = (props: any) => {
   return (
     <div className="artBoard">
       <div className="card">
@@ -13,13 +13,9 @@ const Card = () => {
           </div>
           <div className="card__details">
             <ul>
-              <li>Advanced JS and CSS</li>
-              <li>JS/CSS Preprocessor</li>
-              <li>JS Frameworks</li>
-              <li>Advanced Animations</li>
-              <li>Deployment Pipelines</li>
-              <li>Large Apps Architectures</li>
-              <li>Naming Conventions</li>
+              {props.features.map((feature: string, index: number) => (
+                <li key={index}>{feature}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -27,8 +23,8 @@ const Card = () => {
         <div className="card__side card__side--front">
           <div className="card__theme">
             <div className="card__theme-box">
-              <p className="card__subject">Web Developer</p>
-              <p className="card__title">Hello World!</p>
+              <p className="card__subject">Youssef Pasha</p>
+              <p className="card__title">{props.cmpName}</p>
             </div>
           </div>
         </div>
