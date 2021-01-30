@@ -28,6 +28,15 @@ const CardsContainer = () => {
         ]}
         cmpLink={"auto_text_effect"}
       />
+      <Card
+        cmpName="Dad Jokes"
+        features={[
+          "Advanced TS and Styled-Components",
+          "JS Frameworks",
+          "Advanced Animations",
+        ]}
+        cmpLink={"dad_jokes"}
+      />
     </div>
   );
 };
