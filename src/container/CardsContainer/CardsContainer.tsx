@@ -17,7 +17,7 @@ const CardsContainer = () => {
           "JS Frameworks",
           "Advanced Animations",
         ]}
-        cmpLink={"expandingCards"}
+        cmpLink={"expanding_Cards"}
       />
     </div>
   );
