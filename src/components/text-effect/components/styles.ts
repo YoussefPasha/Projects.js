@@ -2,7 +2,9 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   background-color: darksalmon;
-  font-family: "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: "bold";
+  font-size: 50;
   display: flex;
   flex-direction: column;
   align-items: center;

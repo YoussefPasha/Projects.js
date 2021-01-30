@@ -4,9 +4,6 @@ import { Header } from "../header";
 
 const Navigation = () => {
   let location = useLocation();
-  console.log("====================================");
-  console.log(location);
-  console.log("====================================");
   let locationPath = location.pathname.split("/")[1].toUpperCase().split("_");
   return (
     <Header>
