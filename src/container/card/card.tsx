@@ -18,6 +18,9 @@ const Card = (props: any) => {
               ))}
             </ul>
           </div>
+          <div className="card__go">
+            <button>Go to component and code</button>
+          </div>
         </div>
 
         <div className="card__side card__side--front">
