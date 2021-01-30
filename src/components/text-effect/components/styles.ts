@@ -9,14 +9,15 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
-  margin: 0;
+  margin-left: 6rem;
+  margin-right: 6rem;
 `;
 
 export const MainPanel = styled.div`
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
   background: rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
   font-size: 18px;
