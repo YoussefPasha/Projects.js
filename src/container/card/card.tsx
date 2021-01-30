@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./cardStyle.scss";
 
 const Card = (props: any) => {
@@ -18,9 +19,11 @@ const Card = (props: any) => {
               ))}
             </ul>
           </div>
-          <div className="card__go">
-            <button>Go to component and code</button>
-          </div>
+          <Link to={`${props.cmpLink}`} style={{ textDecoration: "none" }}>
+            <div className="card__go">
+              <button>Go to component and code</button>
+            </div>
+          </Link>
         </div>
 
         <div className="card__side card__side--front">
