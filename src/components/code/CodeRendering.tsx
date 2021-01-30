@@ -4,6 +4,18 @@ import "./code.css";
 const CodeRendering = (props: any) => {
   return (
     <div id="wrapper">
+      <h1
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontWeight: "bold",
+          fontSize: "4rem",
+          fontFamily: "monospace",
+        }}
+      >
+        Code⚡
+      </h1>
       <pre className="code code-html">
         <label>HTML</label>
         <code>{props.html}</code>
