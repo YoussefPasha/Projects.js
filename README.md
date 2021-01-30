@@ -1,4 +1,4 @@
-# Collection of some used components
+# A blog of some used components in HTML & CSS & JS
 
 ## Packages & modules
 
