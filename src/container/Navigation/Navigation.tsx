@@ -4,6 +4,9 @@ import { Header } from "../header";
 
 const Navigation = () => {
   let location = useLocation();
+  console.log("====================================");
+  console.log(location);
+  console.log("====================================");
   let locationPath = location.pathname.split("/")[1].toUpperCase().split("_");
   return (
     <Header>
@@ -21,16 +24,29 @@ const Navigation = () => {
           CWYP
         </Link>
       </h1>
-      <h1
-        style={{
-          color: "white",
-          fontFamily: "monospace",
-          fontSize: 30,
-          fontWeight: "normal",
-        }}
-      >
-        {locationPath[0] + " " + locationPath[1]}
-      </h1>
+      {location.pathname.length > 1 ? (
+        <h1
+          style={{
+            color: "white",
+            fontFamily: "monospace",
+            fontSize: 30,
+            fontWeight: "normal",
+          }}
+        >
+          {locationPath[0] + " " + locationPath[1]}
+        </h1>
+      ) : (
+        <h1
+          style={{
+            color: "white",
+            fontFamily: "monospace",
+            fontSize: 30,
+            fontWeight: "normal",
+          }}
+        >
+          build with 💕 by YP with React
+        </h1>
+      )}
     </Header>
   );
 };
