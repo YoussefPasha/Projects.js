@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 
-export const component = styled.div`
+export const Component = styled.div`
   background-color: #686de0;
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -13,7 +13,7 @@ export const component = styled.div`
   padding: 20px;
 `;
 
-export const container = styled.div`
+export const MainContainer = styled.div`
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -23,13 +23,13 @@ export const container = styled.div`
   width: 800px;
 `;
 
-export const txt = styled.h3`
+export const MainTxt = styled.h3`
   margin: 0;
   opacity: 0.5;
   letter-spacing: 2px;
 `;
 
-export const joke = styled.div`
+export const MainJoke = styled.div`
   font-size: 30px;
   letter-spacing: 1px;
   line-height: 40px;
@@ -37,7 +37,7 @@ export const joke = styled.div`
   max-width: 600px;
 `;
 
-export const btn = styled.button`
+export const MainBtn = styled.button`
   background-color: #9f68e0;
   color: #fff;
   border: 0;
