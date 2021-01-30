@@ -12,7 +12,7 @@ export const Container = styled.div`
   margin: 0;
 `;
 
-export const panel = styled.div`
+export const MainPanel = styled.div`
   position: absolute;
   bottom: 20px;
   background: rgba(0, 0, 0, 0.1);

@@ -33,7 +33,7 @@ const Navigation = () => {
             fontWeight: "normal",
           }}
         >
-          {locationPath[0] + " " + locationPath[1]}
+          {locationPath.map((child) => child + " ")}
         </h1>
       ) : (
         <h1

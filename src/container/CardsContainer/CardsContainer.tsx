@@ -19,6 +19,15 @@ const CardsContainer = () => {
         ]}
         cmpLink={"expanding_Cards"}
       />
+      <Card
+        cmpName="Auto Text Effect"
+        features={[
+          "Advanced TS and Styled-Components",
+          "JS Frameworks",
+          "Advanced Animations",
+        ]}
+        cmpLink={"auto_text_effect"}
+      />
     </div>
   );
 };
