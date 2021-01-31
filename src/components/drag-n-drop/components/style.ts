@@ -28,13 +28,3 @@ export const FillBox = styled.div`
   width: 145px;
   cursor: pointer;
 `;
-
-export const Hold = styled.div`
-  border: solid 5px #ccc;
-`;
-
-export const Hovered = styled.div`
-  background-color: #333;
-  border-color: white;
-  border-style: dashed;
-`;
