@@ -17,6 +17,7 @@ export const MainContainer = styled.div`
 export const MainTitle = styled.h2`
   margin: 10px 0 20px;
   text-align: center;
+  font-size: 2rem;
 `;
 
 export const MainPanel = styled.div`
@@ -47,11 +48,15 @@ export const ResultCode = styled.span`
 
 export const ResultBtn = styled.button`
   position: absolute;
+  background-color: #3b3b98;
+  color: #fff;
   top: 5px;
   right: 5px;
   width: 40px;
   height: 40px;
   font-size: 20px;
+  border: none;
+  cursor: pointer;
 `;
 
 export const MainBtn = styled.button`
@@ -73,4 +78,5 @@ export const CustomizedSettings = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 15px 0;
+  font-size: 1.3rem;
 `;

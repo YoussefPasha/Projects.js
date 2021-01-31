@@ -37,6 +37,15 @@ const CardsContainer = () => {
         ]}
         cmpLink={"dad_jokes"}
       />
+      <Card
+        cmpName="Password Generator"
+        features={[
+          "Advanced TS and Styled-Components",
+          "JS Frameworks",
+          "Advanced Animations",
+        ]}
+        cmpLink={"password_generator"}
+      />
     </div>
   );
 };
