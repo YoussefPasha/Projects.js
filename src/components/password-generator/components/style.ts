@@ -8,10 +8,10 @@ export const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
   padding: 10px;
-  margin: 0;
+  margin: 9rem;
 `;
 
 export const MainTitle = styled.h2`

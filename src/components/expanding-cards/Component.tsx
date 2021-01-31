@@ -98,7 +98,8 @@ const Component = () => {
         </MainCardContainer.Panel>
       </MainCardContainer>
       <Code
-        html={`<!DOCTYPE html>
+        html={`
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -194,7 +195,8 @@ const Component = () => {
             }
           }
         `}
-        js={`const panels = document.querySelectorAll('.panel')
+        js={`
+const panels = document.querySelectorAll('.panel')
 
 panels.forEach(panel => {
     panel.addEventListener('click', () => {

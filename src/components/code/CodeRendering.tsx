@@ -10,7 +10,7 @@ const CodeRendering = (props: any) => {
           justifyContent: "center",
           alignItems: "center",
           fontWeight: "bold",
-          fontSize: "4rem",
+          fontSize: "6rem",
           fontFamily: "monospace",
         }}
       >

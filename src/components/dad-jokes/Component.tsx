@@ -51,7 +51,7 @@ const Component = () => {
       </MainComponent>
       <Code
         html={`
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -70,7 +70,7 @@ const Component = () => {
 </html>
         `}
         designCss={`
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -133,7 +133,7 @@ h3 {
 }
         `}
         js={`
-          const jokeEl = document.getElementById('joke')
+const jokeEl = document.getElementById('joke')
 const jokeBtn = document.getElementById('jokeBtn')
 
 jokeBtn.addEventListener('click', generateJoke)
