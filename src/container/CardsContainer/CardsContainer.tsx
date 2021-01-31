@@ -8,6 +8,7 @@ const CardsContainer = () => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
+        margin: "4rem",
       }}
     >
       <Card
