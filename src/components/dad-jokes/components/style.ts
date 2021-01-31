@@ -9,7 +9,7 @@ export const Component = styled.div`
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
+  margin: 9rem;
   padding: 20px;
 `;
 

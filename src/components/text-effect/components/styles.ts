@@ -11,8 +11,7 @@ export const Container = styled.div`
   justify-content: center;
   height: 90vh;
   overflow: hidden;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin: 9rem;
 `;
 
 export const MainPanel = styled.div`

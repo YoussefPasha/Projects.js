@@ -11,7 +11,7 @@ export const Container = styled.div`
   flex-direction: row;
   height: 100vh;
   overflow: hidden;
-  margin: 10rem;
+  margin: 9rem;
   @media (max-width: 480px) {
     width: 100vw;
   }
