@@ -2,6 +2,9 @@ import React from "react";
 import "./code.css";
 
 const CodeRendering = (props: any) => {
+
+  
+
   return (
     <div id="wrapper">
       <h1
