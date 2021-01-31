@@ -9,14 +9,21 @@ const hovered = {
 };
 
 const Component = () => {
+  const FillBox = () => {
+    return <MainContainer.FillBox />;
+  };
+  const EmptyBox = () => {
+    return <MainContainer.EmptyBox />;
+  };
+
   return (
     <Fragment>
       <MainContainer>
-        <MainContainer.FillBox></MainContainer.FillBox>
-        <MainContainer.EmptyBox></MainContainer.EmptyBox>
-        <MainContainer.EmptyBox></MainContainer.EmptyBox>
-        <MainContainer.EmptyBox></MainContainer.EmptyBox>
-        <MainContainer.EmptyBox></MainContainer.EmptyBox>
+        <FillBox></FillBox>
+        <EmptyBox></EmptyBox>
+        <EmptyBox></EmptyBox>
+        <EmptyBox></EmptyBox>
+        <EmptyBox></EmptyBox>
       </MainContainer>
     </Fragment>
   );
