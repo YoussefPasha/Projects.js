@@ -19,7 +19,7 @@ export default class App extends Component {
         <Route path="/auto_text_effect" component={TextEffect} exact />
         <Route path="/dad_jokes" component={DadJokes} exact />
         <Route path="/password_generator" component={PasswordGenerator} exact />
-        <Route path="/drag-n-drop" component={DragNDrop} exact />
+        <Route path="/drag_n_drop" component={DragNDrop} exact />
       </BrowserRouter>
     );
   }

@@ -54,7 +54,7 @@ const CardsContainer = () => {
           "JS Frameworks",
           "Advanced Animations",
         ]}
-        cmpLink={"drag-n-drop"}
+        cmpLink={"drag_n_drop"}
       />
     </div>
   );
