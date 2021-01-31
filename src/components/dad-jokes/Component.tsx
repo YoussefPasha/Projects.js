@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import MainComponent from "./components";
+import ReactLoading from "react-loading";
 
 const Component = () => {
   const [joke, setJoke] = useState("");
@@ -23,7 +24,25 @@ const Component = () => {
       <MainComponent>
         <MainComponent.Container>
           <MainComponent.Txt>Don't Laugh Challenge</MainComponent.Txt>
-          <MainComponent.Joke>{joke}</MainComponent.Joke>
+          {joke === "loading..." ? (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                margin: "2rem",
+              }}
+            >
+              <ReactLoading
+                type="spokes"
+                height={50}
+                width={50}
+                color="#9f68e0"
+              />
+            </div>
+          ) : (
+            <MainComponent.Joke>{joke}</MainComponent.Joke>
+          )}
           <MainComponent.Btn onClick={fetchJoke}>
             Get another Joke
           </MainComponent.Btn>
