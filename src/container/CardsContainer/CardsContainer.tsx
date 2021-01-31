@@ -47,6 +47,15 @@ const CardsContainer = () => {
         ]}
         cmpLink={"password_generator"}
       />
+      <Card
+        cmpName="Drag And Drop"
+        features={[
+          "Advanced TS and Styled-Components",
+          "JS Frameworks",
+          "Advanced Animations",
+        ]}
+        cmpLink={"drag-n-drop"}
+      />
     </div>
   );
 };

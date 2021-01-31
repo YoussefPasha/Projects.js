@@ -1,40 +1,22 @@
-import styled from "styled-components/macro";
+import React from "react";
+import { MainContainer, FillBox, EmptyBox, Hold, Hovered } from "./style";
 
-export const MainContainer = styled.div`
-  background-color: steelblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+export default function Container({ children, ...restProps }: any) {
+  return <MainContainer {...restProps}>{children}</MainContainer>;
+}
 
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
-`;
+Container.FillBox = function FilledBox({ children, ...restProps }: any) {
+  return <FillBox {...restProps}>{children}</FillBox>;
+};
 
-export const emptyBox = styled.div`
-  height: 150px;
-  width: 150px;
-  margin: 10px;
-  border: solid 3px black;
-  background: white;
-`;
+Container.EmptyBox = function emptyBox({ children, ...restProps }: any) {
+  return <EmptyBox {...restProps}>{children}</EmptyBox>;
+};
 
-export const fillBox = styled.div`
-  background-image: url("https://source.unsplash.com/random/150x150");
-  height: 145px;
-  width: 145px;
-  cursor: pointer;
-`;
+Container.Hold = function hold({ children, ...restProps }: any) {
+  return <Hold {...restProps}>{children}</Hold>;
+};
 
-export const hold = styled.div`
-  border: solid 5px #ccc;
-`;
-
-export const hovered = styled.div`
-  background-color: #333;
-  border-color: white;
-  border-style: dashed;
-`;
+Container.Hovered = function hovered({ children, ...restProps }: any) {
+  return <Hovered {...restProps}>{children}</Hovered>;
+};
